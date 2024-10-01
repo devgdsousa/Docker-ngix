@@ -73,8 +73,8 @@ Este Dockerfile define a imagem Docker para o frontend (NGINX), copiando o arqui
 
 1. **Clone o repositório**:
    ```bash
-   git clone <url-do-repositorio>
-   cd <nome-do-diretorio>
+   git https://github.com/devgdsousa/Docker-ngix
+   cd Docker-ngix
    ```
 
 2. **Construa e inicie os contêineres**:
