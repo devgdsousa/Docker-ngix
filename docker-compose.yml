@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  frontend:
+    image: nginx:latest
+    container_name: frontend
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend/nginx.conf:/etc/nginx/nginx.conf
+      - ./frontend/html:/usr/share/nginx/html
+    networks:
+      - app-network
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    container_name: backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

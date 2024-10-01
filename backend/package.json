@@ -1,0 +1,15 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "description": "Aplicação de backend simples com Node.js e CORS",
+    "main": "app.js",
+    "type": "module",
+    "scripts": {
+      "start": "node app.js"
+    },
+    "dependencies": {
+      "cors": "^2.8.5",
+      "express": "^4.18.2"
+    }
+  }
+  
